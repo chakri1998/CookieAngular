@@ -9,7 +9,7 @@ node {
         def project_path="Cookie-Project-Angular/"
         dir(project_path) {
         stage('Build'){
-                sh "ng build --prod"
+                sh "npm build --prod"
         }
         stage('Deploy'){
                 sh "pm2 restart all"
